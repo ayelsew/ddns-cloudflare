@@ -1,0 +1,14 @@
+[Unit]
+Description=Dynamic DNS Cloudflare Unofficial
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/path/to/program/ddns-cloudflare-linux -d <exmaple.com> -dr <api.exmaple.com> -e <email@exmaple.com> -ak <your-auth-key-dns> -i 1h
+
+[Install]
+WantedBy=multi-user.target

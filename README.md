@@ -33,3 +33,10 @@ e.g: ./ddns-cloudflare-linux -d examble.com -dr api.examble.com -e admin@example
 
 ## OBS
 This script was tested only in linux.
+
+## Setup to systemclt
+
+1) Run `yarn run build` to generate file executable (ddns-cloudflare-linux) or download from [releases](https://github.com/ayelsew/ddns-cloudflare/releases/tag/1.0.0)
+2) Edit param `ExecStart` and copy the file `ddns-cloudflare.service` to `/etc/systemd/system/`  
+3) Run `sudo systemctl daemon-reload` to reload systemclt  
+4) Run `sudo systemctl status ddns-cloudflare.service`
