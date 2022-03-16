@@ -28,7 +28,7 @@ Interval pattern
   d - day
   w - week
   
-e.g: 2h for two hours or 4w four weeks
+e.g: 2h for two hours or 4w four weeks  
 e.g: ./ddns-cloudflare-linux -d examble.com -dr api.examble.com -e admin@example -ak j3y37t73dgghfasvkjldhaksd -i 30m
 
 ## OBS
