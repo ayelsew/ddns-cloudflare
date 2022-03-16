@@ -18,7 +18,7 @@
     "email": "wesley.waaraujo@gmail.com",
     "url": "https://leydev.com.br"
   },
-  "license": "ISC",
+  "license": "SEE LICENSE IN license",
   "devDependencies": {
     "@types/node": "^17.0.21",
     "pkg": "^5.5.2",
