@@ -1,0 +1,29 @@
+{
+  "name": "ddns-cloudflare",
+  "version": "1.0.0",
+  "description": "If you have a dynamic IP, this is a sync application for your DNS on Cloudflare.",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "build": "tsc && pkg . --debug",
+    "start": "ts-node-dev -r tsconfig-paths/register src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "outputPath": "build"
+  },
+  "keywords": ["ddns", "javascript", "typescript", "executable"],
+  "author": {
+    "name": "ayelwes",
+    "email": "wesley.waaraujo@gmail.com",
+    "url": "https://leydev.com.br"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "pkg": "^5.5.2",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.6.2"
+  }
+}
